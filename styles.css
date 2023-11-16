@@ -1,0 +1,86 @@
+
+:root {
+  --nav-bg-color: color(display-p3 0.15 0.5 0.9); 
+  --nav-bg-color-dark: color(display-p3 0.15 0.5 0.7);
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background-color: var(--nav-bg-color, #333);;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 1s; 
+}
+nav:hover {
+  background-color: var(--nav-bg-color-dark, #333);
+}
+@font-face {
+  font-family: 'Open-sans';
+  src: url('OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+p, h1, h2 {
+  font-family: 'Open-sans', Arial, sans-serif;
+}
+
+
+img {
+  width: 10vw; 
+}
+
+/*Scoped CSS*/
+nav h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+li:has(+ h3)::marker {
+  font-family: 'Open-sans', Arial, sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#menu-icon {
+  display: none;
+}
+nav input{
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  img {
+    width: 20vw; 
+  }
+  nav, nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  
+  nav li a {
+    display: block;
+    color: #fff;
+    padding: 10px; /* Add padding for easier clicking */
+    border-top: 1px solid #555; /* Add a border between menu items */
+  }
+
+  nav li, nav h1 {
+    margin: 0;
+    text-align: center;
+  }
+}

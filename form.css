@@ -1,0 +1,52 @@
+@charset "utf-8";
+form {
+  background-color: #f5f5dc;
+  max-width: 400px;
+  margin: 0 left;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+br {
+  display: none;
+}
+
+p {
+  font-style: italic;
+  color: #888;
+  margin-top: 10px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
