@@ -1,6 +1,9 @@
+
+
 const darkModeToggle = document.getElementById('dark-toggle');
 darkModeToggle.style.visibility="visible";
 darkmode=false;
+let darkmode = localStorage.getItem('darkmode') === 'true';
 
 darkModeToggle.addEventListener('click', () => {
     if (!darkmode) {
@@ -15,4 +18,5 @@ darkModeToggle.addEventListener('click', () => {
         document.body.style.setProperty('--form-bg-color', '#f5f5d');
     }
     darkmode=!darkmode;
+    localStorage.setItem('darkmode', darkmode);
 });
