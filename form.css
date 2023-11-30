@@ -1,6 +1,9 @@
 @charset "utf-8";
+:root {
+  --form-bg-color: #f5f5d;
+}
 form {
-  background-color: #f5f5dc;
+  background-color: var(--form-bg-color);
   max-width: 400px;
   margin: 0 left;
 }
