@@ -27,6 +27,10 @@ textarea {
   border-radius: 5px;
 }
 
+input:required + label {
+  border: 2px solid #D2691E;
+}
+
 br {
   display: none;
 }
@@ -36,6 +40,7 @@ p {
   color: #888;
   margin-top: 10px;
 }
+
 
 button[type="submit"] {
   background-color: #007bff;

@@ -2,6 +2,11 @@
 :root {
   --nav-bg-color: color(display-p3 0.15 0.5 0.9); 
   --nav-bg-color-dark: color(display-p3 0.15 0.5 0.7);
+  --body-bg-color: white;
+  --text-color: black;
+}
+body {
+  background-color: var(--body-bg-color);
 }
 nav {
   display: grid;
@@ -22,6 +27,7 @@ nav:hover {
   font-style: normal;
 }
 p, h1, h2 {
+  color: var(--text-color);
   font-family: 'Open-sans', Arial, sans-serif;
 }
 

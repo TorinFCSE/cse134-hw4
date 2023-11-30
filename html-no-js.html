@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    <title>My Resume</title>
+</head>
+<body>
+    <nav>
+        <h1>Contact</h1>
+        <ul>
+            <li><a href="./index.html">About Me</a></li>
+            <li><a href="./experience.html">Experience</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./certifications.html">Certifications</a></li>
+            <li><a href="./contact.html">Contact Form</a></li>
+        </ul>
+    </nav>
+    <h1>Contact me with this form!</h1>
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset>
+            <legend>Contact Form: </legend>
+            <div>
+                <label for="ftype">Reason for Contact:</label>
+                <select name="ftype" id="ftype">
+                    <option value="recruitment">Recruitment Interest</option>
+                    <option value="freelance">Freelance Offer Interest</option>
+                    <option value="other">Other</option>
+                </select> 
+            </div>
+            </div>
+            <div>
+                <label for="lname">Name:</label>
+                <input type="text" id="lname" name="lname" pattern="[A-Za-z ]+"><br><br>
+                <span class="error-message">Please enter your name.</span>
+                <span class="info-message">I'll never share your email with anyone else.</span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <span class="error-message">Please enter a valid email address.</span>
+                <span class="info-message">I'll never share your email with anyone else.</span>
+            </div>
+            <div>
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" required><br><br>
+            </div>
+            <div>
+                <p><i>(optional)</i> Request for additional information or documentation:</p>
+                <textarea id="request" name="Special Requests" rows="4" cols="50" maxlength="350">
+                </textarea>
+            </div>
+            <input type="hidden" id="possible_bot" name="possible_bot" value="true">
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    
+    <footer>
+        <p>&copy; 2023 Torin's Resume</p>
+    </footer>
+</body>
+</html>
