@@ -45,7 +45,8 @@
             </div>
             <div>
                 <label for="company">Company:</label>
-                <input type="text" id="company" name="company" required><br><br>
+                <input type="text" id="company" name="company" pattern="[A-Za-z ]+" required><br><br>
+                <span class="error-message">Please enter a compant name (no special characters).</span>
             </div>
             <div>
                 <p><i>(optional)</i> Request for additional information or documentation:</p>
