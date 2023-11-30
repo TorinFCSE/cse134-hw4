@@ -12,7 +12,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  background-color: var(--nav-bg-color, #333);;
+  background-color: var(--nav-bg-color, #333);
   color: #fff;
   padding: 10px;
   transition: background-color 1s; 
@@ -89,4 +89,10 @@ nav input{
     margin: 0;
     text-align: center;
   }
+}
+
+
+
+#dark-toggle {
+  visibility: hidden;
 }
